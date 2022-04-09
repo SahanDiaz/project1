@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+<h3>{{getMin(23,55)}}</h3>
+<p>parent to child</p>
+<!-- <app-child [parentMessage]="'message from parent'"  ></app-child> -->
+<app-child [parentMsg2]="'this is parent msg 2 to child'" 
+    (msgp)="receveO($event)"
+   ></app-child>
+<p>{{childMessage}} </p>
+<p>{{childMsg2}} </p>
